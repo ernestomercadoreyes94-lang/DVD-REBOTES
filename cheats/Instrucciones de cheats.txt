@@ -1,0 +1,109 @@
+=====================================
+   CHEATS DEL DVD - COMO USARLOS
+=====================================
+
+ VIDEO de como poner los cheats en el cel:
+ https://www.youtube.com/watch?v=gYfIPtPphZ8
+
+-------------------------------------
+ EN CELULAR (DvdRebote.apk)
+-------------------------------------
+Los cheats se activan PRESIONANDO EL TEXTO:
+
+ 1. Abre la app DVD Rebote.
+ 2. Presiona 5 veces seguidas el texto de arriba
+    "Configuracion del DVD".
+ 3. Aparece la casilla "Codigo secreto".
+ 4. Escribe el codigo y toca "Usar" (o Enter).
+
+Atajo: mientras los DVDs estan en pantalla, baja las
+notificaciones y toca el boton "Cheats" de la notificacion
+del DVD. Se abre la casilla directamente.
+
+Para ocultar la casilla, presiona otras 5 veces el texto.
+
+Codigos del celular:
+ stop      -> cierra los DVDs
+ esquina   -> lanza todos los DVDs hacia las esquinas
+ turbo     -> velocidad x2 (escribelo otra vez para quitarlo)
+ lento     -> velocidad a la mitad
+ gigante   -> DVDs el doble de grandes
+ enano     -> DVDs a la mitad de tamano
+ arcoiris  -> los colores cambian sin parar
+ congelar  -> congela / descongela todo
+ masdvd    -> +10 DVDs
+ fiesta    -> arcoiris, turbo y 10 DVDs mas
+ fantasma  -> DVDs medio transparentes
+ caos      -> los DVDs cambian de direccion sin parar
+ hiper     -> velocidad x4 (escribelo otra vez para quitarlo)
+ reversa   -> todos los DVDs dan la vuelta
+ teletransporte -> cada DVD aparece en un lugar al azar
+ parpadeo  -> los DVDs aparecen y desaparecen
+ doble     -> duplica los DVDs (maximo 500 mas cada vez)
+ estela    -> estela detras de los DVDs
+ solo      -> modo solo esquinas (activa / desactiva)
+ reset     -> reinicia el contador y quita todos los cheats
+
+-------------------------------------
+ EN PC (DvdRebote.exe)
+-------------------------------------
+En la PC los cheats se activan SOLO CON LOS .BAT de esta
+carpeta (ya no se escriben codigos).
+
+ 1. Abre el DVD (DvdRebote.exe).
+ 2. Abre el .bat del cheat que quieras (doble clic).
+
+ stop.bat      -> cierra los DVDs
+ esquina.bat   -> lanza todos los DVDs hacia las esquinas
+ turbo.bat     -> velocidad x2 (abrelo otra vez para quitarlo)
+ lento.bat     -> velocidad a la mitad
+ gigante.bat   -> DVDs el doble de grandes
+ enano.bat     -> DVDs a la mitad de tamano
+ arcoiris.bat  -> los colores cambian sin parar
+ congelar.bat  -> congela / descongela todo
+ masdvd.bat    -> +10 DVDs
+ fiesta.bat    -> arcoiris, turbo y 10 DVDs mas
+ fantasma.bat  -> DVDs medio transparentes
+ caos.bat      -> los DVDs cambian de direccion sin parar
+ hiper.bat     -> velocidad x4 (abrelo otra vez para quitarlo)
+ reversa.bat   -> todos los DVDs dan la vuelta
+ teletransporte.bat -> cada DVD aparece en un lugar al azar
+ parpadeo.bat  -> los DVDs aparecen y desaparecen
+ doble.bat     -> duplica los DVDs (maximo 500 mas cada vez)
+ estela.bat    -> estela detras de los DVDs
+ solo.bat     -> modo solo esquinas (activa / desactiva)
+ reset.bat     -> reinicia el contador y quita todos los cheats
+
+Los .bat funcionan desde cualquier carpeta. Si el DVD no
+esta abierto, te avisan.
+
+Los cheats duran mientras el DVD este abierto (no se guardan).
+
+-------------------------------------
+ CODIGO SECRETO EN PC: rebotante
+-------------------------------------
+Los DVDs chocan con las ventanas abiertas y las EMPUJAN:
+las ventanas salen deslizandose, se frenan solas y rebotan
+en los bordes de la pantalla.
+
+ 1. Abre el DVD (DvdRebote.exe).
+ 2. Abre dvd_config y presiona 5 veces seguidas el titulo
+    "Configuracion del DVD". Aparece una casilla al lado.
+ 3. Escribe  rebotante  y presiona Enter.
+
+Las ventanas maximizadas se achican para poder empujarlas.
+Para quitarlo escribe otra vez rebotante (o usa reset.bat):
+las ventanas vuelven a como estaban. Tambien vuelven al
+cerrar el DVD.
+
+-------------------------------------
+ MODO SOLO ESQUINAS GUARDADO (.bat)
+-------------------------------------
+modo_solo_esquinas.bat activa o desactiva el modo solo
+esquinas y lo deja GUARDADO en la configuracion.
+video para flojos:https://youtube.com/shorts/CFJaog_bTTQ
+Cada vez que lo abres cambia. Funciona desde cualquier carpeta.
+
+Necesitas .NET Framework 4.5 o mas nuevo para la version de PC.
+La APK funciona en Android 8 o mas nuevo.
+Espero que te haya funcionado si te funciono por favor dame un follow en mi canal llamado @ernestomercadoreyes691

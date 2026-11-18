@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dvd.rebote">
+
+    <!-- Mostrar los DVDs encima de otras apps -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!-- Servicio que sigue funcionando mientras usas otras apps -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE" />
+    <!-- Notificación con el botón "Detener" -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <!-- Vibrar al tocar una esquina (si se activa en los ajustes) -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- Buscar actualizaciones: revisar GitHub, bajar la APK nueva y abrir el instalador de Android -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <!-- Fondo de pantalla animado (si el cel no lo soporta, la app se instala igual) -->
+    <uses-feature android:name="android.software.live_wallpaper" android:required="false" />
+
+    <application
+        android:label="DVD Rebote"
+        android:icon="@mipmap/ic_launcher"
+        android:allowBackup="false">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.DeviceDefault"
+            android:configChanges="orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".DvdService"
+            android:exported="false"
+            android:foregroundServiceType="specialUse">
+            <property
+                android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
+                android:value="Logos DVD rebotando encima de otras apps" />
+        </service>
+
+        <!-- Código secreto SECRET: la ventana "NO ESCAPE" y los "Error" encima de todas las apps -->
+        <service
+            android:name=".ServicioSecret"
+            android:exported="false"
+            android:foregroundServiceType="specialUse">
+            <property
+                android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
+                android:value="Ventana de broma encima de otras apps" />
+        </service>
+
+        <!-- Fondo de pantalla animado: el DVD rebotando como fondo del cel -->
+        <service
+            android:name=".FondoDvd"
+            android:label="DVD Rebote"
+            android:exported="true"
+            android:permission="android.permission.BIND_WALLPAPER">
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService" />
+            </intent-filter>
+            <meta-data
+                android:name="android.service.wallpaper"
+                android:resource="@xml/fondo_dvd" />
+        </service>
+
+        <!-- Widget de la pantalla de inicio: récord, trofeos y botón para abrir / cerrar el DVD -->
+        <receiver
+            android:name=".WidgetDvd"
+            android:label="DVD Rebote"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_dvd_info" />
+        </receiver>
+
+        <!-- Para compartir la imagen del récord con otras apps, y la APK nueva con el instalador de Android -->
+        <provider
+            android:name=".ProveedorImagen"
+            android:authorities="com.dvd.rebote.imagen"
+            android:exported="false"
+            android:grantUriPermissions="true" />
+    </application>
+</manifest>
