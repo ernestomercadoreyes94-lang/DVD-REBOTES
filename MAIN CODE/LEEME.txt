@@ -1,0 +1,27 @@
+﻿DVD-MAIN CODE  -  el código principal de DVD Rebote (versión 4.5)
+=================================================================
+
+PC\   (programa de Windows, en C#)
+  DvdRebote.cs      el DVD que rebota (ventana encima de todo, fondo animado, cheats, logros, avisos de trofeo)
+  DvdConfig.cs      la configuración (dvd_config.json), estadísticas cifradas, logros y trofeos, idiomas
+  DvdConfigApp.cs   la ventana de configuración (dvd_config.exe) y la ventana de Logros
+  Actualizador.cs   "Buscar actualizaciones" con la consola falsa (descarga de GitHub)
+  InfoConfig.cs     versión y datos del programa
+  dvd.manifest      manifiesto de Windows
+  *.png *.ico *.cur imágenes que van adentro del exe (logo, trofeos, cursor...)
+  compilar.ps1      compila todo -> carpeta PC\salida
+                    (clic derecho > Ejecutar con PowerShell)
+
+Android\   (app del celular, en Java, sin Android Studio)
+  src\com\dvd\rebote\   todo el código de la app (DvdService, DvdView, MainActivity, widget, logros...)
+  res\                  imágenes, íconos, diseño del widget
+  AndroidManifest.xml   permisos y partes de la app
+  build.ps1             compila la APK (necesita el Android SDK y tu llave de firma)
+
+LOGROS: 50/100/500/1000/2500/5000 esquinas y 1/2/5/10/24 horas (11 en total).
+TROFEOS: bronce (1 logro), plata (4), oro (7) y diamante "Bro consigue un trabajo" (los 11).
+
+No se incluyen a propósito:
+  - dvd.keystore / keystore.properties (tu llave para firmar la APK: es secreta, guárdala aparte)
+  - el editor de estadísticas (es solo para ti)
+  - archivos compilados (.exe, .apk) ni carpetas de pruebas
